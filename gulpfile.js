@@ -1,4 +1,4 @@
-const { 
+const {
     src,
     dest,
     series,
@@ -23,7 +23,7 @@ const imagemin = require('gulp-imagemin');
 
 
 
-//utils 
+//utils
 const rename = require('gulp-rename');
 const plumber = require('gulp-plumber');
 const concat = require('gulp-concat');
@@ -59,13 +59,13 @@ const jsLib = [
 function browser_sync(done) {
     browserSync.init({
         server: {
-            baseDir: "./"    
+            baseDir: "./"
         },
         port: 4000
     });
     done();
 }
-//browser reload 
+//browser reload
 
 function reload (done) {
     browserSync.reload();
@@ -184,6 +184,6 @@ exports.default = series(
     imageTask,
     parallel(
         series(cssSource,styleTask),
-        jsTask    
+        jsTask
     )
 );

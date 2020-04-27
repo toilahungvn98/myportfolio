@@ -1,0 +1,22 @@
+//responsive display
+$XS : 48rem; //480px;
+$SM : 76.8rem; //768px;
+$MD : 102.4rem; //1024px;
+$XL : 117rem; //1170px;
+
+// create media queres
+
+@mixin mediaQueries($size) {
+    @if ($size == XL) {
+        @media only screen and (max-width: $XL) { @content; }
+    }
+    @else if ($size == MD) {
+        @media only screen and (max-width: $MD) { @content; }
+    }
+    @else if ($size == SM) {
+        @media only screen and (max-width: $SM) { @content; }
+    }
+    @else if ($size == XL) {
+        @media only screen and (max-width: $XL) { @content; }
+    }
+}
