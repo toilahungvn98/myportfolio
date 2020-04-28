@@ -14,6 +14,18 @@ html {
 	box-sizing: inherit;
 }
 
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a,
+a:visited,
+a:active{
+    color:$color-dark;
+}
+
 body {
     font-size: 1.6rem; // = 16px
     font-family: 'Montserrat', sans-serif;

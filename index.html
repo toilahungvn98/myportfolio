@@ -12,25 +12,221 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html">
-            <img src="./dist/images/icon.svg" alt="Logo" class="svg logo">
-        </a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-list_item"><a class="nav-list_link" href="#">123</a></li>
-                <li class="nav-list_item"><a class="nav-list_link" href="#">Product</a></li>
-                <li class="nav-list_item"><a class="nav-list_link" href="#">About</a></li>
-                <li class="nav-list_item"><a class="nav-list_link" href="#">Contact</a></li>
+    <main class="main">
+        <aside class="aside">
+            <div class="person block">
+                <div class="person__avatar">
+                    <img src="./dist/images/avatar.jpg" class="person__avatar--img" alt="My Avatar" />
+                </div>
+                <div class="person__text">
+                    <p>Hi, my name's Hung. I'm a Frontend Web Developer. Welcome to my personal website!</p>
+                </div>
+                <div class="person__media">
+                    <ul class="social">
+                        <li class="social__item"><a href="https://github.com/toilahungvn98" class="social__item-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a></li>
+                        <li class="social__item"><a href="https://codepen.io/toilahungvn98/pens/    " class="social__item-link">
+                            <ion-icon name="logo-codepen"></ion-icon>
+                        </a></li>
+                        <li class="social__item"><a href="https://www.facebook.com/hihohiho.hi.98" class="social__item-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="nav block">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__item-link active">
+                        About me
+                    </a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link">
+                        Experience
+                    </a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link">
+                        My Project
+                    </a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link">
+                        Contact
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="theme block">
+                <div class="theme__title">
+                    <ion-icon name="contrast-outline"></ion-icon>
+                    <div class="theme__title--text">
+                        Dark Mode
+                    </div>
+                </div>
+                    <label class="theme__toggle">
+                        <input type="checkbox" class="theme__toggle--check" hidden>
+                        <span class="theme__toggle--circle"></span>
+                    </label>
+            </div>
+        </aside>
+        <section class="content">
+            <header class="header">
+                <div class="header__title">
+                    <h1 class="h-1">
+                        Hello! My name's Hung,<br>
+                        I'm a Frontend Web Developer
+                    </h1>
+                    <p class="header__text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, consequuntur dolore sapiente culpa obcaecati officia, esse voluptates minus in dolor a deleniti neque, est tenetur ab adipisci. Dolorem, suscipit maxime.
+                        <a class="btn btn--link" href="https://www.topcv.vn/xem-cv/c9fabd6ee881f62c8f1f1a155b940ba4?utm_source=link_i_topcv&utm_campaign=link_i_topcv&utm_medium=link_i_topcv">Download CV</a>
+                    </p>
+                </div>
+            </header>
+            <section class="description  section-block">
+                <h1 class="heading--title">
+                    Description
+                </h1>
+                <div class="description__content">
+                    <p>
+                        Tìm kiếm được công việc phù hợp, và có thể đi làm với nghề, học hỏi thêm nhiều kỹ năng mới, thư viện, framework mới. Không ngừng nâng cao kiến thức bản thân.
+                    </p>
+                </div>
+            </section>
+            <section class="section-block">
+                <h1 class="heading--title">
+                    Skills
+                </h1>
+                <div class="skills">
+                    <div class="skills__soft">
+                        <ul class="list">
+                            <li class="list__item">
+                                Work independently
+                            </li>
+                            <li class="list__item">
+                                Self-study
+                            </li>
+                            <li class="list__item">
+                                English (read)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills__hard">
+                        <ul class="list">
+                            <li class="list__item">
+                                HTML
+                            </li>
+                            <li class="list__item">
+                                CSS
+                            </li>
+                            <li class="list__item">
+                                JavaScript
+                            </li>
+                            <li class="list__item">
+                                Git
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            </ul>
-        </nav>
-    </header>
+            </section>
+            <section class="section-block">
+                <h1 class="heading--title">
+                    Experience
+                </h1>
+                <div class="experience">
+                    <div class="experience__grid">
+                        <div class="experience__grid--item">
+                            <div class="card">
+                                <div class="card__head">
+                                    <img src="" alt="" class="card__head--img">
+                                </div>
+                                <div class="card__body"></div>
+                            </div>
+                        </div>
+                        <div class="experience__grid--item">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, facilis quasi, officia voluptatem alias, ut ipsum inventore autem eius dolore optio! Quas repellendus accusantium aperiam porro dignissimos sit, labore nisi.
+                        </div>
+                        <div class="experience__grid--item">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, facilis quasi, officia voluptatem alias, ut ipsum inventore autem eius dolore optio! Quas repellendus accusantium aperiam porro dignissimos sit, labore nisi.
+                        </div>
+                        <div class="experience__grid--item">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, facilis quasi, officia voluptatem alias, ut ipsum inventore autem eius dolore optio! Quas repellendus accusantium aperiam porro dignissimos sit, labore nisi.
+                        </div>
+                        <div class="experience__grid--item">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, facilis quasi, officia voluptatem alias, ut ipsum inventore autem eius dolore optio! Quas repellendus accusantium aperiam porro dignissimos sit, labore nisi.
+                        </div>
+                        <div class="experience__grid--item">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, facilis quasi, officia voluptatem alias, ut ipsum inventore autem eius dolore optio! Quas repellendus accusantium aperiam porro dignissimos sit, labore nisi.
+                        </div>
+                        <div class="experience__grid--item">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, facilis quasi, officia voluptatem alias, ut ipsum inventore autem eius dolore optio! Quas repellendus accusantium aperiam porro dignissimos sit, labore nisi.
+                        </div>
+                        <div class="experience__grid--item">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, facilis quasi, officia voluptatem alias, ut ipsum inventore autem eius dolore optio! Quas repellendus accusantium aperiam porro dignissimos sit, labore nisi.
+                        </div>
+                        <div class="experience__grid--item">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, facilis quasi, officia voluptatem alias, ut ipsum inventore autem eius dolore optio! Quas repellendus accusantium aperiam porro dignissimos sit, labore nisi.
+                        </div>
+                        <div class="experience__grid--item">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, facilis quasi, officia voluptatem alias, ut ipsum inventore autem eius dolore optio! Quas repellendus accusantium aperiam porro dignissimos sit, labore nisi.
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
+                                                </p>
+        </section>
+    </main>
 
     <script src="/dist/js/jquery.min.js"></script>
     <!-- Support async/await  -->
     <script src="/dist/js/polyfill.min.js"></script>
     <!-- customer js -->
+    <!-- ion icon  -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
     <script src="/dist/js/main.min.js"></script>
 
 </body>

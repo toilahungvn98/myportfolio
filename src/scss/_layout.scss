@@ -1,0 +1,28 @@
+.main {
+    max-width: 100%;
+    .block {
+        padding: 2rem 0;
+        &:not(:last-child) {
+            border-bottom: 2px solid $color-main;
+        }
+    }
+    .aside {
+        text-align: center;
+        width: 20%;
+        height: 100%;
+        padding: 0 1rem;
+        position: fixed;
+        z-index: 100;
+        overflow-x: hidden;
+        top: 0;
+        left: 0;
+        background-color: $color-main;
+        color: $color-white;
+    }
+
+    .content {
+        margin-left: 20%;
+        background-color: $color-white;
+    }
+
+}
