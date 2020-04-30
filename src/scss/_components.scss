@@ -1,9 +1,6 @@
-// .header {
-//     background-color: red;
-//     @include mediaQueries(SM) {
-//         background-color: green;
-//     }
-// }
+.header {
+    margin-bottom: 7rem;
+}
 
 .section-block {
     padding: 2rem 5rem;
@@ -84,27 +81,43 @@
         margin-bottom: 1.5rem;
     }
 
-    .social {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &__item {
-            &:not(:last-child) {
-                padding-right: 1rem;
-            }
 
-            &-link {
-                display: block;
-                width: 3rem;
-                height: 3rem;
-                line-height: 3.5rem;
-                background-color: $color-white;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        &:not(:last-child) {
+            padding-right: 1rem;
+        }
+        &--column {
+            &:not(:last-child) {
+                padding-right: 3rem;
+            }
+        }
+        &-link {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            line-height: 3.5rem;
+            background-color: $color-white;
+            color: $color-main;
+            border-radius: 50%;
+            transition: all .3s ease;
+            &:hover {
                 color: $color-main;
-                border-radius: 50%;
+            }
+            &--col {
+                font-size: 3rem;
             }
         }
     }
 
+    &--col {
+        flex-direction: column;
+    }
 }
 
 .nav {
@@ -129,44 +142,6 @@
                     color: $color-main-dark;
                 }
             }
-        }
-    }
-}
-
-.theme {
-    &__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1.5rem;
-        &--text {
-            font-size: 1.3rem;
-            margin-left: 1rem;
-            font-weight: $semi-bold;
-        }
-    }
-    &__toggle {
-        display: block;
-        width: 6rem;
-        height: 3rem;
-        border-radius: 1.5rem;
-        margin: 0 auto;
-        padding: 3px;
-        border: 2px solid $color-white;
-        cursor: pointer;
-        user-select: none;
-        transition: all .3s ease;
-        input[type="checkbox"]:checked + &--circle {
-            background-color: $color-white;
-            margin-left: 3rem;
-        }
-        &--circle {
-            border: 2px solid $color-white;
-            display: block;
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-            transition: all .3s ease;
         }
     }
 }
@@ -208,9 +183,6 @@
     width: 50%;
     margin: 0 auto;
 
-    &__soft {}
-    &__hard {
-    }
 }
 .list {
     &__item {
@@ -252,7 +224,7 @@
     align-items: center;
     &--row {
         flex-direction: row;
-
+        align-items: flex-start;
     }
     &__head {
 
@@ -276,3 +248,67 @@
         }
     }
 }
+
+.education {
+    padding: 0 0 0 3rem;
+    // display: flex;
+    // width: 100%;
+    // flex-direction: column;
+    // align-items: flex-start;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    &__date {
+        flex: 0 0 20%;
+        p {
+            font-size: 1.5rem;
+            font-weight: $medium;
+        }
+        // padding-right: 2rem;
+        margin-right: 2rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 2px;
+            height: 3rem;
+            background-color: $color-main;
+            right: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+    &__content {
+        &--title {
+            font-size: 1.7rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__social {
+        margin-right: 2rem;
+    }
+    &__phone {
+    }
+}
+
+
+.footer {
+    text-align: center;
+    padding: 5rem 0;
+    h3 {
+        font-size: 3rem;
+    }
+}
+

@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Fortfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
-
+    <!-- animate css  -->
+    <link rel="stylesheet" href="/dist/css/animate.css">
     <link rel="stylesheet" href="/dist/css/main.min.css">
 </head>
 
-<body>
+<body class="body">
     <main class="main">
         <aside class="aside">
             <div class="person block">
@@ -37,61 +38,104 @@
             </div>
             <nav class="nav block">
                 <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__item-link active">
+                    <li class="menu__item"><a href="#about" class="menu__item-link active">
                         About me
                     </a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link">
+                    <li class="menu__item"><a href="#education" class="menu__item-link">
+                        Education
+                    </a></li>
+                    <li class="menu__item"><a href="#skill" class="menu__item-link">
                         Skills
                     </a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link">
+                    <li class="menu__item"><a href="#experience" class="menu__item-link">
                         Experiences
                     </a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link">
+                    <li class="menu__item"><a href="#project" class="menu__item-link">
                         My Project
                     </a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link">
-                        Contact
+                    <li class="menu__item"><a href="#contact" class="menu__item-link">
+                        Contact Me
                     </a></li>
                 </ul>
             </nav>
-            <div class="theme block">
-                <div class="theme__title">
-                    <ion-icon name="contrast-outline"></ion-icon>
-                    <div class="theme__title--text">
-                        Dark Mode
-                    </div>
-                </div>
-                    <label class="theme__toggle">
-                        <input type="checkbox" class="theme__toggle--check" hidden>
-                        <span class="theme__toggle--circle"></span>
-                    </label>
-            </div>
         </aside>
-        <section class="content">
-            <header class="header">
+        <div class="content">
+            <header id="about" class="header">
                 <div class="header__title">
-                    <h1 class="h-1">
+                    <h1 class="h-1 animated pulse delay-1s">
                         Hello! My name's Hung,<br>
                         I'm a Frontend Web Developer
                     </h1>
-                    <p class="header__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, consequuntur dolore sapiente culpa obcaecati officia, esse voluptates minus in dolor a deleniti neque, est tenetur ab adipisci. Dolorem, suscipit maxime.
-                        <a class="btn btn--link" href="https://www.topcv.vn/xem-cv/c9fabd6ee881f62c8f1f1a155b940ba4?utm_source=link_i_topcv&utm_campaign=link_i_topcv&utm_medium=link_i_topcv">Download CV</a>
-                    </p>
+                    <div class="header__text">
+                        <a class="btn btn--link" href="https://www.topcv.vn/xem-cv/e9c8edd804e024dce9019e1044bce8ec?utm_source=link_i_topcv&utm_campaign=link_i_topcv&utm_medium=link_i_topcv">Download my CV</a>
+                    </div>
                 </div>
             </header>
+            <!-- Description  -->
             <section class="description  section-block">
                 <h1 class="heading--title">
                     Description
                 </h1>
                 <div class="description__content">
                     <p>
-                        Tìm kiếm được công việc phù hợp, và có thể đi làm với nghề, học hỏi thêm nhiều kỹ năng mới, thư viện, framework mới. Không ngừng nâng cao kiến thức bản thân.
+                        With the goal of finding a suitable job. Hope  can become a member of your company in the near future! At the same time, can go to work with the profession, learn more new skills, libraries, frameworks, constantly improve knowledge. From there become a real fullstack developer!
                     </p>
                 </div>
             </section>
-
-            <section class="section-block">
+            <!-- Education  -->
+            <section id="education" class="section-block">
+                <h1 class="heading--title">
+                    Education
+                </h1>
+                <div class="education">
+                    <div class="timeline">
+                        <div class="timeline__date">
+                            <p>8/2017 - 6/2018</p>
+                        </div>
+                        <div class="timeline__content">
+                            <h2 class="timeline__content--title">BACH KHOA APTECH</h2>
+                            <p class="timeline__content--text">
+                                Learn Web Develop and make mini project with PHP.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__date">
+                            <p>8/2018 - 5/2019</p>
+                        </div>
+                        <div class="timeline__content">
+                            <h2 class="timeline__content--title">self learning</h2>
+                            <p class="timeline__content--text">
+                                Learn at Home, research javascript and read technology.Node(ExpressJS),JWT,Mongoose, and more.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__date">
+                            <p>6/2019 - 7/2019</p>
+                        </div>
+                        <div class="timeline__content">
+                            <h2 class="timeline__content--title">internship frontend at company HT VIETNAM</h2>
+                            <p class="timeline__content--text">
+                                Convert PSD to HTML,CSS,JS on language PHP.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__date">
+                            <p>3/2020 - present</p>
+                        </div>
+                        <div class="timeline__content">
+                            <h2 class="timeline__content--title">LEARN REACTJS IN T3H School</h2>
+                            <p class="timeline__content--text">
+                                Preview as html,css,javascript(ES6) and make project with reactJS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Skills  -->
+            <section id="skill" class="section-block">
                 <h1 class="heading--title">
                     Skills
                 </h1>
@@ -149,9 +193,9 @@
 
                     </div>
                 </div>
-
             </section>
-            <section class="section-block">
+            <!-- Experience -->
+            <section id="experience" class="section-block">
                 <h1 class="heading--title">
                     Experiences
                 </h1>
@@ -163,7 +207,11 @@
                                     <img src="/dist/images/HTML.png" alt="" class="card__head--img">
                                 </div>
                                 <div class="card__body card__body--row">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima deleniti, cupiditate dolore odio quia ipsum sint corrupti autem ex. Doloremque ipsum modi esse voluptates harum nam! Aspernatur libero explicabo repellat.</p>
+                                    <p>
+                                        Make skeleton with HTML,HTML5,
+                                        have used template engine as eJS, pugJS.
+                                        Using BEM(naming rule).
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +223,11 @@
                                     <img src="/dist/images/CSS.png" alt="" class="card__head--img">
                                 </div>
                                 <div class="card__body card__body--row">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima deleniti, cupiditate dolore odio quia ipsum sint corrupti autem ex. Doloremque ipsum modi esse voluptates harum nam! Aspernatur libero explicabo repellat.</p>
+                                    <p>- Using CSS, CSS3 make layout with flexbox,
+                                        make  mobile, pc display responsive,
+                                        often use scss, can use bootstrap to make the layout.
+                                    </p>
+                                    <p>- Using Animate make fast animation with css</p>
                                 </div>
                             </div>
                         </div>
@@ -187,54 +239,108 @@
                                     <img src="/dist/images/js.png" alt="" class="card__head--img card__head--img-js">
                                 </div>
                                 <div class="card__body card__body--row">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima deleniti, cupiditate dolore odio quia ipsum sint corrupti autem ex. Doloremque ipsum modi esse voluptates harum nam! Aspernatur libero explicabo repellat.</p>
+                                    <p>- Understand basic Javascript ES5 vs ES6.</p>
+                                    <p>- Using ExpressJs create REST API basic with method (GET,POST,PUT,DELETE)
+                                        make authenticate JWT combine with database mongoDB(mongoose).</p>
+                                    <p>- Use some library WowJs, Jquery,slickJs make animation, effects</p>
+                                    <p>- Call API with library Axios, Fetch</p>
+                                    <p>- Understand architecture Flux</p>
+                                    <div>- ReactJS :</div>
+                                    <p class="ml-1">+ Use hooks and life cycle</p>
+                                    <p class="ml-1">+ Understand basic context API, HOC(High-Order Component), redux, redux-thunk.</p>
+                                    <p class="ml-1">+ Using library Formilk handle fast form.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                        </p>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                            </p>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque necessitatibus fuga consequatur quis quae laborum libero esse inventore incidunt error rem consequuntur tenetur reprehenderit harum, molestias eum, quibusdam facilis?
-                                                </p>
-        </section>
+            <!-- My project  -->
+            <section id="project" class="section-block">
+                <h1 class="heading--title">
+                    My Project
+                </h1>
+                <div class="experience">
+                    <div class="experience__grid">
+                        <div class="experience__grid--item ">
+                            <div class="card">
+                                <div class="card__head">
+                                    <img src="https://www.shubhgems.com/pub/media/catalog/product/d/e/demo.jpg" alt="" class="card__head--img">
+                                </div>
+                                <div class="card__body">
+                                    <h3>Project 1</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience__grid--item ">
+                            <div class="card">
+                                <div class="card__head">
+                                    <img src="https://www.shubhgems.com/pub/media/catalog/product/d/e/demo.jpg" alt="" class="card__head--img">
+                                </div>
+                                <div class="card__body">
+                                    <h3>Project 2</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience__grid--item">
+                            <div class="card">
+                                <div class="card__head">
+                                    <img src="https://www.shubhgems.com/pub/media/catalog/product/d/e/demo.jpg" alt="" class="card__head--img card__head--img-js">
+                                </div>
+                                <div class="card__body">
+                                    <h3>Project 3</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience__grid--item">
+                            <div class="card">
+                                <div class="card__head">
+                                    <img src="https://www.shubhgems.com/pub/media/catalog/product/d/e/demo.jpg" alt="" class="card__head--img card__head--img-js">
+                                </div>
+                                <div class="card__body">
+                                    <h3>Project 4</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Contact Me  -->
+            <section id="contact" class="section-block">
+                <h1 class="heading--title">
+                    Contact Me
+                </h1>
+                <div class="contact">
+                    <ul class="social">
+                        <li class="social__item social__item--column"><a href="https://github.com/toilahungvn98" class="social__item-link social__item-link--col">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a></li>
+                        <li class="social__item social__item--column"><a href="https://codepen.io/toilahungvn98/pens/" class="social__item-link social__item-link--col">
+                            <ion-icon name="logo-codepen"></ion-icon>
+                        </a></li>
+                        <li class="social__item social__item--column"><a href="https://www.facebook.com/hihohiho.hi.98" class="social__item-link social__item-link--col">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    </ul>
+                    <div class="contact__phone">
+                        <ul class="phone-list">
+                            <li class="phone-list__item">
+                                <ion-icon name="call-sharp"></ion-icon> 0352773169
+                            </li>
+                            <li class="phone-list__item">
+                                <ion-icon name="call-sharp"></ion-icon>  0773293601
+                            </li>
+                            <li class="phone-list__item">
+                                <ion-icon name="send-sharp"></ion-icon> hungnguyen131298@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <h3>See you again! ^_^</h3>
+            </footer>
+    </div>
     </main>
 
     <script src="/dist/js/jquery.min.js"></script>
